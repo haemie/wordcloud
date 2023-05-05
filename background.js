@@ -1,11 +1,14 @@
 chrome.runtime.onInstalled.addListener(() => {
+  chrome.action.setBadgeText({
+    text: 'OFF',
+  });
+});
+
+chrome.action.onClicked.addListener((tab) => {
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    files: ['cloud.js'],
+    files: ['main.js'],
   });
-  // chrome.action.setBadgeText({
-  //   text: 'OFF',
-  // });
 });
 
 // const extensions = 'https://developer.chrome.com/docs/extensions';
