@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Word Cloud Maker 0.7",
+  "description": "A extention to replace your webpage with a word cloud based on the words used on the webpage.",
+  "version": "0.7",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  }
+}
