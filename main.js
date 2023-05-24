@@ -90,7 +90,7 @@ document.querySelector('body').innerHTML = '';
 let timer = 25;
 
 for (let [key, value] of wordMap) {
-  if (value >= twentyFifth) {
+  if (value >= 1) {
     const word = document.createElement('p');
     word.setAttribute('class', `classname${key}`);
     word.innerHTML = '&#160;' + key;
@@ -123,7 +123,7 @@ for (let [key, value] of wordMap) {
       for (let [key2, value2] of wordMap) {
         //console.log(key2);
 
-        if (value2 >= newTwentyFifth) {
+        if (value2 >= 1) {
           let newWord = document.querySelector(`.classname${key2}`);
           console.log(newWord);
           if (!newWord) {
